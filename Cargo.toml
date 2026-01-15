@@ -1,0 +1,18 @@
+cargo-features = ["edition2024"]
+
+[package]
+name = "vault_program"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+solana-program = "3.0.0"
+solana-pubkey = "4.0.0"
+solana-system-interface = { version = "1.0.0", features = ["bincode"] }
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+custom-panic = []
+custom-heap = []
