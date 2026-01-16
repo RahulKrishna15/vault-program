@@ -6,8 +6,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-solana-program = "3.0.0"
-solana-pubkey = "4.0.0"
+borsh = "1.6.0"
+solana-program = "1.18"
 solana-system-interface = { version = "1.0.0", features = ["bincode"] }
 
 [lib]
